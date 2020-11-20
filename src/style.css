@@ -6,7 +6,7 @@ body {
 }
 canvas {
   display: block;
-  background-color: #000000;
+  background-color: #1495cc;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -19,7 +19,7 @@ canvas {
   left: 20px;
 }
 .top-score {
-  right: 20px;
+  right: 10px;
 }
 .score {
   display: block;
@@ -37,7 +37,7 @@ canvas {
   z-index: 1;
   font-size: 11px;
   text-align: center;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 .endgame{
   position: absolute;
@@ -49,7 +49,7 @@ canvas {
   text-align: center;
 }
 button{
-  border: 4px solid #ffffff;
+  border: 4px solid #ffff;
   background-color: transparent;
   color: #ffffff;
   font-size: 20px;
@@ -60,5 +60,19 @@ button{
 }
 button:hover{
   background-color: #ffffff;
-  color: #000000;
+  color: #2825f5;
+}
+
+input.fat-button {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-family: 'PT Mono', serif;
+}
+
+input.fat-button:focus {
+  outline: 0;
 }

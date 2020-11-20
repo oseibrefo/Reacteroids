@@ -224,17 +224,17 @@ export class Reacteroids extends Component {
     let message;
 
     if (this.state.currentScore <= 0) {
-      message = '0 points... So sad.';
+      message = '0 antibodies points was earned... you have been infected with the covid-19 virus! So sad you could not survive it.';
     } else if (this.state.currentScore >= this.state.topScore){
-      message = 'Top score with ' + this.state.currentScore + ' points. Woo!';
+      message = 'Top score of ' + this.state.currentScore + ' Antibodies points were earned. Woo congratulations! You are now a covid-19 survival guru';
     } else {
-      message = this.state.currentScore + ' Points though :)'
+      message = this.state.currentScore + ' Antibody Points were earned though :)'
     }
 
     if(!this.state.inGame){
       endgame = (
         <div className="endgame">
-          <p>Game over, man!</p>
+          <p>End of life for you!, You could not survive the severe viral attacks!</p>
           <p>{message}</p>
           <button
             onClick={ this.startGame.bind(this) }>
@@ -248,10 +248,11 @@ export class Reacteroids extends Component {
       <div>
         { endgame }
         <span className="score current-score" >Score: {this.state.currentScore}</span>
-        <span className="score top-score" >Top Score: {this.state.topScore}</span>
+        <span className="score top-score" >Top Score BASED ON NUMBER OF VIRUSES KILLED: {this.state.topScore}</span>
         <span className="controls" >
-          Use [A][S][W][D] or [←][↑][↓][→] to MOVE<br/>
-          Use [SPACE] to SHOOT
+          Use [A][S][W][D] or [←][↑][↓][→] to MOVE AND ESCAPE THE COVID-19 VIRUS ATTACK<br/>
+          Use [SPACE] to SHOOT THE COVID-19 VIRUSES HOVERING THE ATMOSPHERE<br/>
+          ***AVOID CONTACT WITH THE  COVID-19 VIRUS SINCE YOU WILL BE INFECTED AND DIE INSTANTLY***
         </span>
         <canvas ref="canvas"
           width={this.state.screen.width * this.state.screen.ratio}
